@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'food';
+    src: url('../crispy_food/Crispy\ Food\ DEMO.ttf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor01: #F2C063;
+    --cor02: #D6D989;
+    --cor03: hsl(79, 39%, 40%);
+    --cor04: #2C4001;
+    --cor05: #025920;
+    --cor06: #F2B652;
+    --cor07: #F2D57E;
+
+    --fonte-padrao: Arial, verdana, Helvetica, sans-serif;
+    --fonte-food:'food';
+
+    
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body { 
+    background-color: rgb(207, 226, 167);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor06), var(--cor07));
+}
+
+header > p {
+    color: var(--cor04);
+    text-align: left;
+    padding: 10px;
+}
+
+main {
+    background-color: rgb(242, 231, 222);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px var(--cor04);
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    min-width: 380px;
+    max-width: 1200px;
+}
+
+main > p {
+    text-align: justify;
+    color: black;
+    margin: auto;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+nav {
+    background-color:darkgreen;
+    padding: 10px;
+}
+
+nav > a {
+    color: rgb(242, 231, 222);
+    text-decoration: none;
+}
+
+nav > a:hover {
+    background-color: #fdffdc;
+    color: var(--cor04);
+}
+
+h1 {
+    text-align: center;
+    color: #025920;
+}
+
+h2 {
+    color: #0F541E;
+    font-family: 'food';
+    font-size: 30px;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+
+h4 {
+    Color:var(--cor04);
+    font-size: 25px;
+
+}
+
+div > p {
+    display: none;
+}
+
+main img {
+    margin: auto;
+    display: block;
+    max-width: 350px;
+    width: 100%;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+aside {
+    background-color: #d0e2a8;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px #2C4001;
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside > h2 {
+    background-color: #025920;
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px; 
+
+}
+
+footer {
+    background-color: darkgreen;
+    color: rgb(242, 231, 222);
+    text-align: center;
+}
